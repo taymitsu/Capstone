@@ -1,3 +1,14 @@
+[class*="col"]{
+    padding: 1rem;
+    background-color:whitesmoke;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+[class*="con"]{
+    background-color: whitesmoke; 
+    text-align: center;
+}
 .jumbotron {
     background-image: url(images/christmaslights.gif);
     background-repeat: no-repeat;
@@ -15,19 +26,21 @@
     text-shadow: 2px 2px 2px red;
 }
 
-.btn-primary{
+.btn-primary {
     font-family: 'Press Start 2P', cursive;
     color: whitesmoke;
     border-style: none;
     outline: none;
     text-decoration: none;
-    padding: 2px;
-    background-color: 
-    
+    background-color: red;
 }
 
 .btn-primary:hover{
     color: whitesmoke;
-    background-color: red;
+    background-color: green;
     text-decoration: none;
+}
+
+footer{
+    background-color: #c4e3f3;
 }

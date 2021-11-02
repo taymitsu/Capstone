@@ -16,59 +16,115 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Henny+Penny&family=Mountains+of+Christmas:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Encode+Sans+Condensed:wght@200&family=Henny+Penny&family=Mountains+of+Christmas:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <a class="navbar-brand" href="#">Change</a>
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">History</a>
-          <a class="nav-item nav-link" href="#">How It Works</a>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light"></nav>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How It Works</a>
+                </li>
+            
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Getting Started
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#account">Create Account</a>
+                        <a class="dropdown-item" href="#party">Create Party</a>
+                        <a class="dropdown-item" href="#wishlist">Make Your Wishlist</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
+                </li>
+            </ul>
         </div>
+
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
     </nav>
 
     <!-- Landing -->
     <div class="jumbotron text-center">
         <h1>Mission: Secret Santa </h1>
-        <a href="#" class="btn-primary">DEPLOY MISSION</a>
+        <a href="#landing" class="btn-primary">DEPLOY MISSION</a>
     </div>
 
-    <!-- Call to Action Cards -->
-    <div class="container mb-5 mt-5">
+    <!-- How It Works Grid -->
+    <h1>How It Works</h1>
+    <a href="#logistics"></a>
+    <div class="container-md">
         <div class="row">
-          <div class="col-lg-4">
-            
-            <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="816" height="459" src="https://www.youtube.com/embed/UBWBTL1s8rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-sm"><h2>Create Your Party</h2>
+                <p>Invite your Family, Friends & Coworkers via email to join in on the fun!</p>
             </div>
-            <h3>Create Your Party</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            <button>Create Your Party</button>
-          </div>
-          <div class="col-lg-4">
-            <h3>Curate your Wishlist</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            <img src="images/papaya.jpg" class="img-fluid rounded">
+            <div class="col-sm"><h2>Use Wishlists</h2>
+                <p>create your own and access other wishlists to simplify the stress and anxiety over finding the perfect gift this Christmas season</p>
+            </div>
+            <div class="col-sm"><h2>Set A Limit</h2>
+                <p>Set a limit that works for your entire party. This can be updated at any point in time if things change!</p>
+            </div>
         </div>
-          <div class="col-lg-4">
-            <img src="images/palms.jpg" class="img-fluid rounded">
-            <h3>Fun</h3>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          </div>
-        </div>
+        <div class="row">
+            <div class="col-sm"><h2>Confidential</h2>
+                <p>Everyone can play, even the organizer! Everything is set up to be kept a secret. That's what Santa would have wanted! </p>
+            </div>
+            <div class="col-sm"><h2>Exclusions</h2>
+                <p>Playing with you are already getting a present for? We can make sure you do not get matched with them. You just need to list that person by first and last name under "Exclusions"</p>
+            </div>
+            <div class="col-sm"><h2>Recieve reminders</h2>
+                <p>No one wants to be the one who forgot their Secret Santa gift. That is inexcuseable per Old Saint Nick! Sign up to get text message or email reminders as your exchange date nears!</p>
+            </div>
     </div>
-
-    <!-- Rules/How to Play **GRID** -->
-
-    <!-- History **Split Page** -->
-
+    <!-- Getting Started href #start-->
+    <h1>Getting Started</h1>
+    <a href="#start"></a>
     <!-- FOOTER -->
-    <div class="bg-secondary p-5 text-white">
-        &copy; 2019 Launch Page Inc
-    </div>
+    <footer id="subscribe" href="#subscribe">
+      <h2>Stay In Touch</h2>
+      <p>Sign up to receive reminder text messages when your exchange date approaches</p>
+          <form>
+              <label>
+                  <span>First Name</span>
+                  <input type="text">
+              </label>
+
+              <label>
+                  <span>Last Name</span>
+                  <input type="text">
+              </label>
+
+              <label>
+                  <span>Email Address</span>
+                  <input type="text">
+              </label>
+
+              <label>
+                  <span>Phone Number</span>
+                  <input type="number">
+              </label>
+              <button type="submit">Send</button>
+          </form>
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
