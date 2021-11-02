@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main > section {
+    min-height: 75vh;
+}
+
 [class*="col"]{
     padding: 1rem;
     background-color:whitesmoke;
@@ -8,6 +17,15 @@
 [class*="con"]{
     background-color: whitesmoke; 
     text-align: center;
+}
+
+.container-md h1, {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    background-color: none;
+}
+
+.container-md h2{
+    font-family: 'Encode Sans Condensed', sans-serif;
 }
 .jumbotron {
     background-image: url(images/christmaslights.gif);
@@ -43,4 +61,22 @@
 
 footer{
     background-color: #c4e3f3;
+}
+
+.carousel-item{
+    height: 40rem;
+    position: relative;
+    background-image: url(images/morphfaces.gif);
+}
+
+.container{
+    position: center;
+    padding-top: 50px;
+    width: 500px;
+    height: 500px;
+}
+
+.container h1{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
 }
