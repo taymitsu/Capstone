@@ -4,42 +4,31 @@
 }
 
 .navbar, .nav-item{
-    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
     border-style: none;
-}
-
-.collapse navbar{
-    border-style: none;
-}
-[class*="col"]{
-    padding: 1rem;
-    background-color:whitesmoke;
-    border: 5px solid #fff;
-    padding: 5px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-[class*="con"]{
-    background-color: whitesmoke; 
-    text-align: center;
-}
-
-.container-md h1 {
+    display: flex;
     font-family: 'Encode Sans Condensed', sans-serif;
-    background-color: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    background-color: white;
 }
 
-.container-md h2{
-    font-family: 'Encode Sans Condensed', sans-serif;
-}
 .jumbotron {
     background-image: url(images/brownprez2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    padding-top:300px;
+    padding-top:200px;
     padding-bottom:200px;
     position: relative;
+    margin: 0;
+    min-height: 55vh;
+}
+
+landing#jumbotron{
+    margin: 0;
 }
 
 .jumbotron h1{
@@ -64,78 +53,68 @@
     text-decoration: none;
 }
 
-footer{
-    background-color: #c4e3f3;
-}
-
 .carousel-item{
     height: 40rem;
     position: relative;
     background-image: url(images/morphfaces.gif);
 }
 
-.container{
-    position: center;
-    padding-top: 50px;
-    width: 500px;
-    height: 500px;
+.text-center{
+    text-align: center;
+    margin: 1.25rem 0;
+    border-bottom: 1px solid whitesmoke;
+    padding: 1.25rem 0;
 }
 
-.container h1{
-    font-family: 'Encode Sans Condensed', sans-serif;
-    text-align: center;
-}
 
 #subscribe{
     min-height: 75vh;
 }
 
+ul.menu.simple{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    background-color: #c4e3f3;
+}
 
-.left{
+.col h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+#logistics{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/images/calendar.jpg);
-    background-size: cover;
-    min-height: 75vh;
+    padding: 1px;
+    margin: 1px;
+    height: 35vh;
 }
 
-.right{
-    display : flex;
-    justify-content : flex-end;
-    align-items : center;
-    background-color:#FFF;
-    color : #3d231b;
+h1{
+    font-family: 'Press Start 2P', cursive;
+    color: red;
+    text-shadow: 2px 2px 2px whitesmoke;
 }
 
-@media (max-width: 1200px) { 
-    .left{
-      height:50%
-    }
-    .right{
-      height:50%
-    }
+.carousel-caption{
+
 }
 
-.social-footer {
-    padding: 1rem;
-    background-image: url(/images/christmaslights.gif);
-    display: flex;
-  }
-  
-  .social-footer .social-footer-icons li:last-of-type {
-    margin-right: 0;
-  }
-  
-  .social-footer .social-footer-icons .fa {
-    font-size: 1.3rem;
-    color: #fefefe;
-  }
-  
-  .social-footer .social-footer-icons .fa:hover {
-    color: #4a4a4a;
-    transition: color 0.3s ease-in;
+.footer{
+    background-image: url(/images/footer.jpeg);
+    height: 22vh;
 }
-  
 
-  
+ul.menu-simple{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+ul.menu-simple li {
+    display: inline-block;
+    margin-right: 1em;
+}

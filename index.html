@@ -12,6 +12,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stickystyle" href="stickyfooter.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,168 +22,130 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/46aa719f8b.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <nav class="navbar navbar-light bg-light"></nav>
+    <body>
+        <!-- NAVBAR -->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How It Works</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#start" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Getting Started
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#createaccount.html">Create Account</a>
+                                <a class="dropdown-item" href="#buildparty.html">Build Your Party</a>
+                                <a class="dropdown-item" href="#wishlist">Make Your Wishlist</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
+            </nav>
+        </section>
+        <!-- Landing -->
+        <section>
+            <div class="jumbotron text-center" id="landing">
+                <h1>Mission: Secret Santa </h1>
+                <a href="#" class="btn-primary">DEPLOY MISSION</a>
+            </div>
+        </section>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-            
-                <li class="nav-item">
-                    <a class="nav-link" href="#">How It Works</a>
-                </li>
-            
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#start" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Getting Started
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#createaccount.html">Create Account</a>
-                        <a class="dropdown-item" href="#buildparty.html">Build Your Party</a>
-                        <a class="dropdown-item" href="#wishlist">Make Your Wishlist</a>
+        <!-- How It Works Grid -->
+        <section>
+            <h1>How It Works</h1>
+                <div class="row row-cols-3" id="logistics">
+                    <div class="row">
+                        <div class="col"><h2>Create Your Party</h2>
+                            <p>Invite your Family, Friends & Coworkers via email to join in on the fun!</p>
+                        </div>
+                        <div class="col"><h2>Use Wishlists</h2>
+                            <p>Create your own and access other wishlists to simplify the stress and anxiety over finding the perfect gift this Christmas season</p>
+                        </div>
+                        <div class="col"><h2>Set A Limit</h2>
+                            <p>Set a limit that works for your entire party. This can be updated at any point in time if things change!</p>
+                        </div>
                     </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#subscribe">Subscribe</a>
-                </li>
-            </ul>
-        </div>
-
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-
-    </nav>
-
-    <!-- Landing -->
-    <div class="jumbotron text-center" id="landing">
-        <h1>Mission: Secret Santa </h1>
-        <a href="#" class="btn-primary">DEPLOY MISSION</a>
-    </div>
-
-    <!-- How It Works Grid -->
-    <h1>How It Works</h1>
-    <div class="container-md" id="logistics">
-        <div class="row">
-            <div class="col-sm"><h2>Create Your Party</h2>
-                <p>Invite your Family, Friends & Coworkers via email to join in on the fun!</p>
-            </div>
-            <div class="col-sm"><h2>Use Wishlists</h2>
-                <p>create your own and access other wishlists to simplify the stress and anxiety over finding the perfect gift this Christmas season</p>
-            </div>
-            <div class="col-sm"><h2>Set A Limit</h2>
-                <p>Set a limit that works for your entire party. This can be updated at any point in time if things change!</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm"><h2>Confidential</h2>
-                <p>Everyone can play, even the organizer! Everything is set up to be kept a secret. That's what Santa would have wanted! </p>
-            </div>
-            <div class="col-sm"><h2>Exclusions</h2>
-                <p>Playing with you are already getting a present for? We can make sure you do not get matched with them. You just need to list that person by first and last name under "Exclusions"</p>
-            </div>
-            <div class="col-sm"><h2>Recieve Reminders</h2>
-                <p>No one wants to be the one who forgot their Secret Santa gift. That is inexcuseable per Old Saint Nick! Sign up to get text message or email reminders as your exchange date nears!</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Getting Started href #start-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel"
-            data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel"
-            data-slide-to="1"></li>
-            <li data-target="#myCarousel"
-            data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container">
-                    <h1>Create An Account</h1>
-                    <p>Create an Account today to keep track of all your exchanges, get assigned, access wishlists and much more</p>
-                    <a href="#" class="btn btn-lg btn-primary">Sign up now!</a>
                 </div>
-            </div>
+                    <div class="row row-cols-3" id="logistics">
+                        <div class="row">
+                            <div class="col"><h2>Confidential</h2>
+                                <p>Everyone can play, even the organizer! Everything is set up to be kept a secret. That's what Santa would have wanted! </p>
+                            </div>
+                            <div class="col"><h2>Exclusions</h2>
+                                <p>Playing with you are already getting a present for? We can make sure you do not get matched with them. You just need to list that person by first and last name under "Exclusions"</p>
+                            </div>
+                            <div class="col"><h2>Recieve Reminders</h2>
+                                <p>No one wants to be the one who forgot their Secret Santa gift. That is inexcuseable per Old Saint Nick! Sign up to get text message or email reminders as your exchange date nears!</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
 
-            <div class="carousel-item">
-                <div class="container">
-                    <h1>Build Your Party</h1>
-                    <p>Invite Family, Friends and even coworkers via email to participate in the fun. Create as many different parties as you would like. It's free and your picks will also be confidential</p>
-                    <a href="#buildparty.html" class="btn btn-lg btn-primary">Sign up now!</a>
+        <!-- Getting Started href #start-->
+        <section>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel"
+                    data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel"
+                    data-slide-to="1"></li>
+                    <li data-target="#myCarousel"
+                    data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Create An Account</h1>
+                            <p>Create an Account today to keep track of all your exchanges, get assigned, access wishlists and much more</p>
+                            <a href="#" class="btn btn-lg btn-primary">SIGN UP NOW</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Build Your Party</h1>
+                            <p>Invite Family, Friends and even coworkers via email to participate in the fun. Create as many different parties as you would like. It's free and your picks will also be confidential</p>
+                            <a href="#buildparty.html" class="btn btn-lg btn-primary">BUILD PARTY</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Design Your Wishlist</h1>
+                            <p>Do you ever feel the innate pressure to find the best gifts during the Christmas season? We are here to simplify the process and ease this pressure by giving the option to use wishlists!</p>
+                            <a href="#wishlist.html" class="btn btn-lg btn-primary">DESIGN WISHLIST</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>    
+        </section>
+        <!-- Subscribe for reminders/ Split screen (half form, half image) -->
 
-            <div class="carousel-item">
-                <div class="container">
-                    <h1>Design Your Wishlist</h1>
-                    <p>Do you ever feel the innate pressure to find the best gifts during the Christmas season? We are here to simplify the process and ease this pressure by giving the option to use wishlists!</p>
-                    <a href="#wishlist.html" class="btn btn-lg btn-primary">Sign up now!</a>
-                </div>
+        <!--FOOTER-->   
+        <div class="footer">
+            <div class="container">
+                <ul class="menu-simple">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
         </div>
-    </div>    
-
-    <!-- Subscribe for reminders/ Split screen (half form, half image) -->
-
-    <section class="intro">
-        <row>
-            <div class="col-lg-6 col-sm-12 left">
-            </div>
-            <div class="col-lg-6 col-sm-12 right">
-                <p>Sign up to receive reminder text messages when your exchange date approaches</p>
-                <form>
-                    <label>
-                        <span>First Name</span>
-                        <input type="text">
-                    </label>
-        
-                    <label>
-                        <span>Last Name</span>
-                        <input type="text">
-                    </label>
-        
-                    <label>
-                        <span>Email Address</span>
-                        <input type="text">
-                    </label>
-        
-                    <label>
-                        <span>Phone Number</span>
-                        <input type="number">
-                    </label>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </row>
-    </section>
 
 
-
-
-    <!--FOOTER-->
-
-    <footer class="social-footer">
-        <div class="social-footer-left">
-        </div>
-        <div class="social-footer-icons">
-          <ul class="menu simple">
-            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-    </footer>
-    <!-- JS -->
+        <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
