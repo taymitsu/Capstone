@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>MAIN</title>
+    <title>Mission: Secret Santa</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -54,12 +54,11 @@
             </nav>
         </section>
         <!-- Landing -->
-        <section>
-            <div class="jumbotron text-center" id="landing">
-                <h1>Mission: Secret Santa </h1>
-                <a href="#" class="btn-primary">DEPLOY MISSION</a>
-            </div>
-        </section>
+        <div class="jumbotron text-center">
+            <h1>Mission: Secret Santa </h1>
+            <a href="#" class="btn-primary">DEPLOY MISSION</a>
+        </div>
+        
 
         <!-- How It Works Grid -->
         <section>
@@ -108,7 +107,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h1>Create An Account</h1>
                             <p>Create an Account today to keep track of all your exchanges, get assigned, access wishlists and much more</p>
-                            <a href="#" class="btn btn-lg btn-primary">SIGN UP NOW</a>
+                            <a href="#" class="button">SIGN UP NOW</a>
                         </div>
                     </div>
 
@@ -116,7 +115,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h1>Build Your Party</h1>
                             <p>Invite Family, Friends and even coworkers via email to participate in the fun. Create as many different parties as you would like. It's free and your picks will also be confidential</p>
-                            <a href="#buildparty.html" class="btn btn-lg btn-primary">BUILD PARTY</a>
+                            <a href="#buildparty.html" class="button">BUILD PARTY</a>
                         </div>
                     </div>
 
@@ -124,13 +123,47 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h1>Design Your Wishlist</h1>
                             <p>Do you ever feel the innate pressure to find the best gifts during the Christmas season? We are here to simplify the process and ease this pressure by giving the option to use wishlists!</p>
-                            <a href="#wishlist.html" class="btn btn-lg btn-primary">DESIGN WISHLIST</a>
+                            <a href="#wishlist.html" class="button">DESIGN WISHLIST</a>
                         </div>
                     </div>
                 </div>
             </div>    
         </section>
         <!-- Subscribe for reminders/ Split screen (half form, half image) -->
+        <div class=" row no-gutters">
+            <div class="col">
+                <div class="leftside"></div>
+            </div>
+            <div class="col">
+                <div class="rightside">
+                    <div class="container-form">
+                        <h1>Receive Text Reminders</h1>
+                        <h3>Sign up to receive reminders text messages as exchange date approaches.</h3>
+                        <form>
+                            <label>
+                                <span>First Name</span>
+                                <input type="text">
+                            </label>
+                            <label>
+                                <span>Last Name</span>
+                                <input type="text">
+                            </label>
+                            <label>
+                                <span>Email Address</span>
+                                <input type="text">
+                            </label>
+                            <label>
+                                <span>Phone Number</span>
+                                <input type="number">
+                            </label>
+                            <label>
+                                <button type="submit">Send</button>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--FOOTER-->   
         <div class="footer">
